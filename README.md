@@ -18,9 +18,8 @@ A simple and elegant **Binary Calculator** built using **HTML**, **CSS**, and **
 
 ```
 📂 binary-calculator/
-├── index.html        # Main calculator UI
-├── style.css         # Styles for layout and design
-├── script.js         # JavaScript logic
+├── Binary_Calculator.html        # Main calculator UI(contains internal CSS )
+├── Binary_calculator.js         # JavaScript logic
 ├── README.md         # This file
 ```
 
