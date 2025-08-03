@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Binary Calculator</title>
+
+<style>
+body {
+font-family: Arial, sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+margin: 0;
+background-color: #f0f0f0;
+}
+.calculator {
+background-color: white;
+border-radius: 8px;
+padding: 20px;
+box-shadow: 0 0 10px rgba(0,0,0,0.1);
+width: 400px;
+}
+.result {
+background-color: #e6f3ff;
+padding: 10px;
+border-radius: 4px;
+margin-bottom: 10px;
+text-align: right;
+min-height: 20px;
+ word-wrap: break-word;
+}
+.options {
+display: flex;
+gap: 10px;
+margin-bottom: 10px;
+}
+.options label {
+display: flex;
+align-items: center;
+}
+.buttons {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 5px;
+}
+button {
+padding: 10px;
+font-size: 14px;
+border: none;
+background-color: #f0f0f0;
+cursor: pointer;
+border-radius: 4px;
+}
+button:hover {
+background-color: #e0e0e0;
+}
+.green {
+ background-color: #d4edda;
+}
+.green:hover {
+background-color: #c3e6cb;
+ }
+#explanation {
+margin-top: 10px;
+background-color: #f8f9fa;
+padding: 10px;
+border-radius: 4px;
+display: none;
+}
+</style>
+</head>
+<body>
+<div class="calculator">
+<div class="result" id="result">0101 & 0001 = 0101</div>
+<div class="options">
+<label><input type="radio" name="mode" value="binary" checked> Binary only</label>
+<label><input type="radio" name="mode" value="octal"> Octal only</label>
+<label><input type="radio" name="mode" value="both"> Binary and Decimal</label>
+<button class="green" id="stepwise">Stepwise explanation</button>
+</div>
+<div class="buttons">
+<button>0</button>
+<button>1</button>
+<button>=</button>
+<button>Delete</button>
+<button>Reset</button>
+<button>Bitwise AND</button>
+<button>Bitwise OR</button>
+<button>Prev Op.</button>
+<button>Next Op.</button>
+<button>Bitwise XOR</button>
+<button>Bitwise NOT</button>
+<button>First Op.</button>
+<button>Last Op.</button>
+<button>Left Shift</button>
+<button>Right Shift</button>
+<button>Unsigned Right Shift</button>
+<button>1's Complement</button>
+<button>2's Complement</button>
+<button>Multiplication</button>
+<button>Division</button>
+</div>
+<div id="explanation"></div>
+</div>
+<script type="text/javascript" src="Binary_calculator.js"></script>
+</body>
+</html>
